@@ -1,0 +1,22 @@
+Usage: heroku apps
+
+ list your apps
+
+Example:
+
+ $ heroku apps
+ === My Apps
+ example
+ example2
+
+ === Collaborated Apps
+ theirapp   other@owner.name
+
+Additional commands, type "heroku help COMMAND" for more details:
+
+  apps:create [NAME]   #  create a new app
+  apps:destroy         #  permanently destroy an app
+  apps:info            #  show detailed app information
+  apps:open            #  open the app in a web browser
+  apps:rename NEWNAME  #  rename the app
+
