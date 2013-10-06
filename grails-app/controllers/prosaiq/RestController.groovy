@@ -135,6 +135,7 @@ class RestController {
 	
 	def submit() {
 		//Receives submissions from ODK client via ODK server in JSON format
+		//Code to manually check submission via CLI: curl --data @[path/to/json_file] --header "Content-Type: application/json" http://127.0.0.1:8080/prosaiq/rest-api/submit
 			
 			if (request.format == "json") {
 				def odkSubmissionInstance
