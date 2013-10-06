@@ -217,10 +217,10 @@ class RestController {
 								break
 							//default:
 						}
-						if (hl7Message != "") {
+						/*if (hl7Message != "") {
 							def file = new File('/mnt/hgfs/GeneratedFiles_on_WOLCCC15/ODK4PRO2_' + odkSubmissionInstance.id.toString() + '.oru')
 							file.write(hl7Message)
-						}  
+						}*/  
 					}
 					response.status = 201
 					render contentType: "application/xml", {
