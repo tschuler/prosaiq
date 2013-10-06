@@ -1,13 +1,13 @@
 dataSource {
-    pooled = true
+    /*pooled = true
     driverClassName = "org.h2.Driver"
     username = "sa"
-    password = ""
-	/*pooled = true
+    password = ""*/
+	pooled = true
 	driverClassName = "org.postgresql.Driver"
-	username = "postgres"
-	password = "p0stgres"
-	dialect = org.hibernate.dialect.PostgreSQLDialect*/
+	username = "thiloschuler"
+	password = ""
+	dialect = org.hibernate.dialect.PostgreSQLDialect
 }
 hibernate {
     cache.use_second_level_cache = true
@@ -19,22 +19,22 @@ environments {
     development {
         dataSource {
             dbCreate = "update" // one of 'create', 'create-drop', 'update', 'validate', ''
-            url = "jdbc:h2:mem:devDb;MVCC=TRUE;LOCK_TIMEOUT=10000"
-			//url = "jdbc:postgresql://localhost:5432/local-odk4proto-dev"
+            //url = "jdbc:h2:mem:devDb;MVCC=TRUE;LOCK_TIMEOUT=10000"
+			url = "jdbc:postgresql://localhost:5432/prosaiq_dev"
         }
     }
     test {
         dataSource {
             dbCreate = "update"
             //url = "jdbc:h2:mem:testDb;MVCC=TRUE;LOCK_TIMEOUT=10000"
-			url = "jdbc:postgresql://localhost:5432/local-odk4proto-test"
+			url = "jdbc:postgresql://localhost:5432/prosaiq_test"
         }
     }
     production {
         dataSource {
             dbCreate = "update"
             //url = "jdbc:h2:prodDb;MVCC=TRUE;LOCK_TIMEOUT=10000"
-			url = "jdbc:postgresql://localhost:5432/local-odk4proto-prod"
+			url = "jdbc:postgresql://localhost:5432/prosaiq_prod"
             pooled = true
             properties {
                maxActive = -1
