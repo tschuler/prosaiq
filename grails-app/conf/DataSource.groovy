@@ -17,15 +17,15 @@
  */
 
 dataSource {
-    /*pooled = true
+    pooled = true
     driverClassName = "org.h2.Driver"
     username = "sa"
-    password = ""*/
-	pooled = true
+    password = ""
+	/*pooled = true
 	driverClassName = "org.postgresql.Driver"
 	username = "postgres"
 	password = "p0stgres"
-	dialect = org.hibernate.dialect.PostgreSQLDialect
+	dialect = org.hibernate.dialect.PostgreSQLDialect*/
 }
 hibernate {
     cache.use_second_level_cache = true
@@ -37,8 +37,8 @@ environments {
     development {
         dataSource {
             dbCreate = "update" // one of 'create', 'create-drop', 'update', 'validate', ''
-            //url = "jdbc:h2:mem:devDb;MVCC=TRUE;LOCK_TIMEOUT=10000"
-			url = "jdbc:postgresql://localhost:5432/local-odk4proto-dev"
+            url = "jdbc:h2:mem:devDb;MVCC=TRUE;LOCK_TIMEOUT=10000"
+			//url = "jdbc:postgresql://localhost:5432/local-odk4proto-dev"
         }
     }
     test {
