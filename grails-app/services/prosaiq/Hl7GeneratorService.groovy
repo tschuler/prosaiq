@@ -22,14 +22,14 @@ class Hl7GeneratorService {
     def ImportPSAIntoTestPatient (OdkSubmission odkSubmissionInstance) {
 		
 		//try { 
-			String msgTempl = "MSH|^~\\&|OMNI-Lab|P208|MOSAIQ||201107201645+1100||ORU^R01^ORU_R01|SEALSS_20110720.4476|P|2.3.1^AUS&Australia&ISO3166-1|3143273||||AUS||EN^English^ISO639-1\r" +
-			// MSH-10: Message Control ID (ST)
+			String msgTempl = "MSH|^~\\&|OMNI-Lab|P208|MOSAIQ||201107201645+1100||ORU^R01^ORU_R01|SEALSS_20110720.4476|P|2.3.1^AUS&Australia&ISO3166-1|-1||||AUS||EN^English^ISO639-1\r" +
+			// MSH-7: Date/Time of Message; MSH-10: Message Control ID (ST); MSH-13: Sequence Number (-1 if not used)
 			"PID|1||8191821^^^^UR~G^^^AUSDVA^DVA|8191821^^^^016^P208|ISOFT^WOLL^^^MRS||19731007|F|||114 CROWN ST^^WOLLONGONG^NSW^2500||^PRN^PH^^^^442284758\r" +
-			"OBR|1||11W136835O^2206.AUSNATA^2206^L|I237^PSA^NATA2206|||201107201600|||||||201107201638|SER&Serum&HL70070|094544DY^NASSER^ELIAS HABIB^^^DR^^^AUSHICPR^L^^^MCR||||||201107201645||IMM|F||^^^20110720^^R|^^^^^^^^NATA2206^L^^^MCR||||1^^201107201645+1100\r" +
-			// OBR-3: Filler Order Number; OBR-4: Universal Service ID; OBR-7: Observation Date/Time; OBR-14: Specimen received Date/Time; OBR-22: Results status change; OBR-27:Quantity/Timing?; OBR-32: ?Principal Results Interpreter
+			"OBR|1||11W136835O^2206.AUSNATA|^OTR|||201107201600|||4707961J^SCHULER^THILO^^^DR^^^AUSHICPR^L^^^MCR||||||4707961J^SCHULER^THILO^^^DR^^^AUSHICPR^L^^^MCR|||||||||F||||||\r"+
+			// OBR-3: Filler Order Number; OBR-4: Universal Service ID; OBR-7: Observation Date/Time; OBR-10: Collector Identifier; OBR-14: Specimen received Date/Time; OBR-16: Ordering Provider; OBR-22: Results status change; OBR-27:Quantity/Timing?; OBR-32: ?Principal Results Interpreter
 			"OBX|1|NM|I0242^PSAI^NATA2206^^^||4.0|ng/mL|||||F|||201107201600+1100|SEALSS^2206^AUSNATA\r" +
 			// OBX-14: Date/Time of Observation
-			"NTE|2||\\.br\\Please note, the tumour marker method and calibration have changed\\.br\\from 13th July 2010. Due to the specificity of the tumour marker\\.br\\method, previousl tumour marker results cannot be compared to the new\\.br\\method results. Results from 13th July 2010 should only be compared\\.br\\with further results generated with this new method.\\.br\\\r"
+			"NTE|2||\\.br\\Pxlease note, the tumour marker method and calibration have changed\\.br\\from 13th July 2010. Due to the specificity of the tumour marker\\.br\\method, previousl tumour marker results cannot be compared to the new\\.br\\method results. Results from 13th July 2010 should only be compared\\.br\\with further results generated with this new method.\\.br\\\r"
 			
 			// Parse message in HL7 version 2.3.1
 			HapiContext context = new DefaultHapiContext();
@@ -90,7 +90,7 @@ class Hl7GeneratorService {
 			String msgTempl = "MSH|^~\\&|OMNI-Lab|P208|MOSAIQ||201107201645+1100||ORU^R01^ORU_R01|SEALSS_20110720.4476|P|2.3.1^AUS&Australia&ISO3166-1|-1||||AUS||EN^English^ISO639-1\r" +
 			// MSH-7: Date/Time of Message; MSH-10: Message Control ID (ST); MSH-13: Sequence Number (-1 if not used)
 			"PID|1||8191821^^^^UR~G^^^AUSDVA^DVA|8191821^^^^016^P208|ISOFT^WOLL^^^MRS||19731007|F|||114 CROWN ST^^WOLLONGONG^NSW^2500||^PRN^PH^^^^442284758\r" +
-			"OBR|1||11W136835O^2206.AUSNATA|^OTR|||201107201600|||0945449B^NASSER^ELIAS^^^DR^^^AUSHICPR^L^^^MCR||||||0945449B^NASSER^ELIAS^^^DR^^^AUSHICPR^L^^^MCR|||||||||F||||||\r"
+			"OBR|1||11W136835O^2206.AUSNATA|^OTR|||201107201600|||4707961J^SCHULER^THILO^^^DR^^^AUSHICPR^L^^^MCR||||||4707961J^SCHULER^THILO^^^DR^^^AUSHICPR^L^^^MCR|||||||||F||||||\r"
 			// OBR-3: Filler Order Number; OBR-4: Universal Service ID; OBR-7: Observation Date/Time; OBR-10: Collector Identifier; OBR-14: Specimen received Date/Time; OBR-16: Ordering Provider; OBR-22: Results status change; OBR-27:Quantity/Timing?; OBR-32: ?Principal Results Interpreter
 			
 			// Parse template message in HL7 version 2.3.1
@@ -178,72 +178,13 @@ class Hl7GeneratorService {
 		}*/
 	}
 	
-	// Previous implementation
-	/*def ImportHeightEtcIntoTestPatient (OdkSubmission odkSubmissionInstance) {
-		
-		try { 
-			String msgTempl = "MSH|^~\\&|OMNI-Lab|P208|MOSAIQ||201107201645+1100||ORU^R01^ORU_R01|SEALSS_20110720.4476|P|2.3.1^AUS&Australia&ISO3166-1|3143273||||AUS||EN^English^ISO639-1\r" +
-			// MSH-10: Message Control ID (ST)
-			"PID|1||8191821.ILL^^^^UR~G^^^AUSDVA^DVA|8191821^^^^016^P208|ISOFT^WOLL^^^MRS||19731007|F|||114 CROWN ST^^WOLLONGONG^NSW^2500||^PRN^PH^^^^442284758\r" +
-			"OBR|1||11W136835O^2206.AUSNATA^2206^L|I237^PSA^NATA2206|||201107201600|||||||201107201638|SER&Serum&HL70070|094544DY^NASSER^ELIAS HABIB^^^DR^^^AUSHICPR^L^^^MCR||||||201107201645||IMM|F||^^^20110720^^R|^^^^^^^^NATA2206^L^^^MCR||||1^^201107201645+1100\r" +
-			// OBR-3: Filler Order Number; OBR-4: Universal Service ID; OBR-7: Observation Date/Time; OBR-14: Specimen received Date/Time; OBR-22: Results status change; OBR-27:Quantity/Timing?; OBR-32: ?Principal Results Interpreter
-			"OBX|1|NM|I0242^PSAI^NATA2206^^^||4.0|ng/mL|||||F|||201107201600+1100|SEALSS^2206^AUSNATA\r" +
-			// OBX-14: Date/Time of Observation
-			"NTE|1||\\.br\\Comment:\\.br\\^\r"
-			
-			// Parse message in HL7 version 2.3.1
-			HapiContext context = new DefaultHapiContext();
-			CanonicalModelClassFactory mcf = new CanonicalModelClassFactory("2.3.1");
-			context.setModelClassFactory(mcf);
-			PipeParser parser = context.getPipeParser();
-			ca.uhn.hl7v2.model.v231.message.ORU_R01 hapiMsg = (ca.uhn.hl7v2.model.v231.message.ORU_R01) parser.parse(msgTempl);
-			
-			//parse JSON string for convenient access e.g. via parsedJson.comment
-			def slurper = new JsonSlurper()
-			def parsedJson = slurper.parseText(odkSubmissionInstance.odkData.toString())
-	
-			// Replace PSA value and various timestamps in template via terser
-			Terser terser = new Terser(hapiMsg);
-			terser.set("/.OBX-5", odkSubmissionInstance.variableValue.toString());
-			
-			Calendar calendar = Calendar.getInstance(); // current date/time (base time)
-			TimeZone timeZone = TimeZone.getTimeZone("Australia/Sydney");
-			calendar.setTimeZone(timeZone);
-			
-			SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyyMMddHHmmZ");
-			simpleDateFormat.setTimeZone(timeZone);  // via SimpleDateFormat timeZone adapts to daylight savings (not directly?!?)
-			
-			String hl7TsNow = new CommonTS(simpleDateFormat.format(calendar.getTime())).getValue()
-			
-			calendar.add(Calendar.HOUR, -1); // 1h before base time
-			String hl7TsNowMinus1h = new CommonTS(simpleDateFormat.format(calendar.getTime())).getValue()
-			
-			calendar.add(Calendar.HOUR, -1); // 2h before base time
-			String hl7TsNowMinus2h = new CommonTS(simpleDateFormat.format(calendar.getTime())).getValue()
-			
-			terser.set("/.MSH-7", hl7TsNow);
-			terser.set("/.OBR-7", hl7TsNowMinus2h);
-			terser.set("/.OBR-14", hl7TsNowMinus1h);
-			terser.set("/.OBR-22", hl7TsNow);
-			terser.set("/.OBX-14", hl7TsNowMinus2h);
-			
-			//println (hapiMsg.printStructure(true))
-			terser.set("/.OBXNTE/NTE-3-2", parsedJson.comment)
-					
-			return hapiMsg.encode()
-		
-		} catch (Exception e) {
-			throw new Hl7Exception(message: "Error during Generation of HL7 message", exception: e)
-		}
-	}*/
-	
 	def ImportOTR_ROIntoTestPatient(OdkSubmission odkSubmissionInstance) {
 		
 		//try {
 			String msgTempl = "MSH|^~\\&|OMNI-Lab|P208|MOSAIQ||201107201645+1100||ORU^R01^ORU_R01|SEALSS_20110720.4476|P|2.3.1^AUS&Australia&ISO3166-1|-1||||AUS||EN^English^ISO639-1\r" +
 			// MSH-7: Date/Time of Message; MSH-10: Message Control ID (ST); MSH-13: Sequence Number (-1 if not used)
 			"PID|1||8191821^^^^UR~G^^^AUSDVA^DVA|8191821^^^^016^P208|ISOFT^WOLL^^^MRS||19731007|F|||114 CROWN ST^^WOLLONGONG^NSW^2500||^PRN^PH^^^^442284758\r" +
-			"OBR|1||11W136835O^2206.AUSNATA|^OTR|||201107201600|||0945449B^NASSER^ELIAS^^^DR^^^AUSHICPR^L^^^MCR||||||0945449B^NASSER^ELIAS^^^DR^^^AUSHICPR^L^^^MCR|||||||||F||||||\r"
+			"OBR|1||11W136835O^2206.AUSNATA|^OTR|||201107201600|||4707961J^SCHULER^THILO^^^DR^^^AUSHICPR^L^^^MCR||||||4707961J^SCHULER^THILO^^^DR^^^AUSHICPR^L^^^MCR|||||||||F||||||\r"
 			// OBR-3: Filler Order Number; OBR-4: Universal Service ID; OBR-7: Observation Date/Time; OBR-10: Collector Identifier; OBR-14: Specimen received Date/Time; OBR-16: Ordering Provider; OBR-22: Results status change; OBR-27:Quantity/Timing?; OBR-32: ?Principal Results Interpreter
 			
 			// Parse template message in HL7 version 2.3.1
