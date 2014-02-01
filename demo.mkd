@@ -10,18 +10,60 @@ This is the page contains a set of links to the components of a public demonstra
 The following graphic provides an overview of the PROsaiq prototype system:
 ![PROsaiq prototype demonstrator overview](images/prosaiq-demo.png)
 
-Contents
-----------------
+##Contents
 * This will become a table of contents (this text will be scraped).
 {:toc}
 
-[the clickable text](http://xlson.com/)
 
-* Bullet lists are also easy to create
-* One more
+## Online demonstrator
 
-## Subheading 1 
-blablub
+### Data collection via browser rendered form (Enketo)
 
-## Subheading 2
-lalalalalal alalalala alalalalal lalala lalal alla alalalalalalalal alalala alalala allaa lala llaal lalal al al lal laallalal lsfla lallalalla la llalalalfas flalajfla 
+We prepared three examples. Follow the links in the first column to open an online form.
+
+ePRO / survey | Comment
+---|---
+[Patient Reported Functional Status (PRFS)](https://qxrqf.enketo.formhub.org/webform)| PRFS is a ECOG status assessment expressed in lay language. It has bee developed and validated by Cancer Care Ontario (for details see [here](https://www.cancercare.on.ca/common/pages/UserFile.aspx?fileId=277285))
+[Symptom Assessment Scale (SAS)](https://tdr54.enketo.formhub.org/webform)|
+[State your height](https://znu9d.enketo.formhub.org/webform)|Survey initiall used in the departmental demonstration (see [coming soon...](jroi.org))
+
+
+
+### View HL7 message 
+
+1. Browse to the HL7 Converter component: 
+2. Find your submission
+3. Click 'Generate HL7 message
+
+
+## Optional steps
+
+1. Install ODK Collect
+
+    ..*follow the installation instructions at http://opendatakit.org/use/collect/
+    ..*Version 1.2.2 was used at the time of writing these notes
+
+2. Configure the ODK Collect preferences
+
+    ..*access the preferences by pressing the menu button in the ODK Collect start screen and clicking on 'General  Settings'
+    ..*set Server Platform to 'Other'
+    ..*set URL to 'https://formhub.org/odk2hl7demo'
+    ..*leave all other settings at default (User and Password can be blank)
+
+3. Download the '????????' form
+
+    ..*click on 'Get Blank Form' button in ODK Collect's main menu
+    ..*select and download the 'Submit a PSA value' form
+
+4. Fill out the 'Submit a PSA value' form
+
+    ..*click on 'Fill Blank Form' button in ODK Collect's main menu
+    ..*select the 'Submit a PSA value' form
+    ..*fill it in by swiping through and following the prompts
+    ..*once at the end of the form leave the 'finalised' checked and click the 'Save Form and Exit'
+
+5. Send the the finalised form to the server
+
+    ..*click on 'Send Finalised Form' button
+    ..*select and upload the filled in form (a success message confirms that the upload worked)
+
