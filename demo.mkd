@@ -8,7 +8,7 @@ layout: default
 This is the page contains a set of links to the components of a public demonstrator of the PROsaiq system. For details about this system and scientific referencing please refer to the open access JROI article: [coming soon...](http://jroi.org).
 
 The following graphic provides an overview of the PROsaiq prototype system:
-![PROsaiq prototype demonstrator]()
+![PROsaiq prototype demonstrator overview](images/prosaiq-demo.png)
 
 Contents
 ----------------
