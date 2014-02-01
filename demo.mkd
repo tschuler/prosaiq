@@ -1,11 +1,16 @@
 ---
-title: PROsaiq demonstrator
+title: PROsaiq prototype demonstrator
 layout: default
 ---
 
-# PROsaiq demonstrator
+# PROsaiq prototype demonstrator
 
-Chapter Contents
+This is the page contains a set of links to the components of a public demonstrator of the PROsaiq system. For details about this system and scientific referencing please refer to the open access JROI article: [coming soon...](http://jroi.org).
+
+The following graphic provides an overview of the PROsaiq prototype system:
+![PROsaiq prototype demonstrator]()
+
+Contents
 ----------------
 * This will become a table of contents (this text will be scraped).
 {:toc}
