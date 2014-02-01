@@ -3,12 +3,12 @@ title: PROsaiq demonstrator
 layout: default
 ---
 
+# PROsaiq demonstrator
+
 Chapter Contents
 ----------------
 * This will become a table of contents (this text will be scraped).
 {:toc}
-
-# This is a H1
 
 [the clickable text](http://xlson.com/)
 
@@ -17,5 +17,6 @@ Chapter Contents
 
 ## Subheading 1 
 blablub
+
 ## Subheading 2
-lalalalalal alalalala alalalalal lalala lalal alla alalalalalalalal alalala alalala allaa lala llaal lalal al al 
+lalalalalal alalalala alalalalal lalala lalal alla alalalalalalalal alalala alalala allaa lala llaal lalal al al lal laallalal lsfla lallalalla la llalalalfas flalajfla 
