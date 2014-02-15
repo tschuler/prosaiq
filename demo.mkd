@@ -19,22 +19,22 @@ The following graphic provides an overview of the PROsaiq prototype system:
 
 ### Data collection via browser rendered form (Enketo)
 
-We prepared three examples. Follow the links in the first column to open an online form.
+This demonstrator contains three examples. Follow the links in the first column to open an online form, fill it in and submit it.  
 
 ePRO / Survey | Comment
 ---|---
-[Patient Reported Functional Status (PRFS)](https://qxrqf.enketo.formhub.org/webform)| PRFS is a ECOG status assessment expressed in lay language. It has bee developed and validated by Cancer Care Ontario (for details see [here](https://www.cancercare.on.ca/common/pages/UserFile.aspx?fileId=277285))
-[Symptom Assessment Scale (SAS)](https://tdr54.enketo.formhub.org/webform)| The SAS has been developed in Australia. 
-[State your height](https://znu9d.enketo.formhub.org/webform)|Survey initiall used in the departmental demonstration (see [coming soon...](jroi.org))
-
+[Patient Reported Functional Status (PRFS)](https://qxrqf.enketo.formhub.org/webform)| The Patient Reported Functional Status (PRFS) is a [ECOG status](http://en.wikipedia.org/wiki/ECOG_score) assessment expressed in lay language. It has bee developed and validated by Cancer Care Ontario (for details see [here](https://www.cancercare.on.ca/common/pages/UserFile.aspx?fileId=277285)).
+[Symptom Assessment Scale (SAS)](https://tdr54.enketo.formhub.org/webform)| The Symptom Assessment Scale (SAS) describes the patient’s level of distress relating to the seven most common symptoms by palliative patients. The SAS was developed in Australia (for details see [here](http://ahsri.uow.edu.au/content/groups/public/@web/@chsd/@pcoc/documents/doc/uow129189.pdf)).
+['State your height' survey](https://znu9d.enketo.formhub.org/webform)|A survey that shows some of OpenRosa's advanced features such as validation or branching. It was used in PROsaiq's initial demonstration (see [coming soon...](jroi.org)).
 
 
 ### View HL7 message 
 
-1. Browse to the HL7 Converter component: http://prosaiq-demo.herokuapp.com/odkSubmission/list
-..* __CAVEAT__: For this demo the HL7 converter has been hosted as an app on a freely availble [Heroku](https://www.heroku.com/) server in the US. As a free-of-charge service the performance is limited. This is particularly true initially, after the app has been idle for ~30min. The reason is the server is dynamically powered off/on in order to conserve energy and performance.
+1. Browse to the HL7 Converter component: [http://prosaiq-demo.herokuapp.com/odkSubmission/list](http://prosaiq-demo.herokuapp.com/odkSubmission/list)
 2. Find your submission
-3. Click 'Generate HL7 message
+3. Click 'Generate HL7 message'
+
+> __CAVEAT:__ For this demo the HL7 converter has been hosted as a web app on a freely available [Heroku](https://www.heroku.com/) server in the US. As a free-of-charge service the performance is limited. _When the app had been idle for more than 30min, it can take up to 60s until it can be reached._ The reason for this delay is that the server is dynamically powered off/on in order to conserve energy and performance. 
 
 
 ## Optional steps (NEEDS UPDATING!)
