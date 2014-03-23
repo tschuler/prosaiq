@@ -35,7 +35,7 @@ ePRO / Survey | Comment
 2. Find your submission
 3. Click 'Generate HL7 message'
 
-> __CAVEAT__:exclamation:  
+> :warning: __CAVEAT__  
 > For this demo the HL7 converter has been hosted as a web app on a freely available [Heroku](https://www.heroku.com/) server in the US. As a free-of-charge service the performance is limited. __When the app had been idle for more than 30min, it can take up to 60s until it can be reached (refresh after a short pause).__ The reason for this delay is that the server is dynamically powered off/on in order to conserve energy and performance. 
 
 
