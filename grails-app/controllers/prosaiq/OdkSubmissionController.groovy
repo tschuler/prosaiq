@@ -136,7 +136,7 @@ class OdkSubmissionController {
 				case "psa2hl7": 
 					hl7Message = hl7GeneratorService.ImportPSAIntoTestPatient(odkSubmissionInstance)
 					break
-				case "state_your_height-04": 
+				case "state_your_height-03": 
 					hl7Message = hl7GeneratorService.ImportHeightEtcIntoTestPatient(odkSubmissionInstance)
 					break
 				case "OTR_RO-02": 
