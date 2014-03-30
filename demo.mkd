@@ -10,9 +10,9 @@ This public demonstrator aims at providing an easy introduction into the functio
 
 The following diagram provides an overview of the PROsaiq prototype components:
 ![PROsaiq prototype demonstrator overview](images/prosaiq-demo.png)
-PROsaiq system integrates existing (*__blue__*) and new (*__yellow__*) components in order to deliver new functionality efficiently and can be described as an ["enterprise mashup"](http://en.wikipedia.org/wiki/Enterprise_mashups).  
+PROsaiq system integrates existing (**blue**) and new (**yellow**) components in order to deliver new functionality efficiently and can be described as an ["enterprise mashup"](http://en.wikipedia.org/wiki/Enterprise_mashups).  
 
-The components marked with the *__red star__* can be accessed as part of this demonstrator. In a live PROsaiq environment the __HL7 converter and [Formhub](https://formhub.org/) webserver run in the background (no direct user interaction)__ providing MOSAIQ with HL7 files for automatic importation. As there is no online MOSAIQ system that could have been used for this demonstrator, a simple web-based user interface was built to reveal the HL7 message generated from the collected data by the 'HL7 converter' component.
+The components marked with the **red star** can be accessed as part of this demonstrator. In a live PROsaiq environment the __HL7 Converter and [Formhub](https://formhub.org/) Webserver run in the background (no direct user interaction)__ providing MOSAIQ with HL7 files for automatic importation. As there is no online MOSAIQ system that could have been used for this demonstrator, a simple web-based user interface was built to display the HL7 message generated from the collected data by the 'HL7 converter' component.
 
 <!-- ##Contents
 * This will become a table of contents (this text will be scraped).
@@ -20,71 +20,66 @@ The components marked with the *__red star__* can be accessed as part of this de
 
 ## Try it out
 
-### Data collection in a browser
+### I. Data collection via a web browser
 
-PROsaiq uses the [Enketo](https://enketo.org/) to enable browser-based data collection using multiple devices (tablet computer, smart phone, personal computer) provided they support a modern browser with adequate HTML5 support (Google Chrome, Mozilla Firefox and Apple Safari are preferred).  
+PROsaiq uses [Enketo](https://enketo.org/) for browser-based data collection. This enables PROsaiq to be used on multiple devices such as tablet computer, smart phone, personal computer provided they support a modern browser with adequate HTML5 support. Note that if you are having issues using this demonstrator, please try accessing from a Chrome, Firefox or Safari browser.
 
-This demonstrator contains three examples:
-* Follow the links in the first column to open an online form
-* Fill in the form and submit it  
+This demonstrator has three examples:
+1. Follow the links in the first column of the table to open an online form
+2. Fill in the form and press 'Submit'
+  * a message will be appear to say that the request has been queued and then submitted
+* Return to this page and continue with [II.](#ViewHL7)
 
 ePRO Instrument | Comment
 ---|---
-[Patient Reported Functional Status (PRFS)](https://qxrqf.enketo.formhub.org/webform)| The Patient Reported Functional Status (PRFS) is a [ECOG status](http://en.wikipedia.org/wiki/ECOG_score) assessment expressed in lay language. It has bee developed and validated by Cancer Care Ontario (for details see [here](https://www.cancercare.on.ca/common/pages/UserFile.aspx?fileId=277285)).
-[Symptom Assessment Scale (SAS)](https://tdr54.enketo.formhub.org/webform)| The Symptom Assessment Scale (SAS) describes the patient’s level of distress relating to the seven most common symptoms by palliative patients. The SAS was developed in Australia (for details see [here](http://ahsri.uow.edu.au/content/groups/public/@web/@chsd/@pcoc/documents/doc/uow129189.pdf)).
-['State your height' Survey](https://a3lfc.enketo.formhub.org/webform)|A survey that shows some of OpenRosa's advanced features such as validation or branching. It was used in PROsaiq's initial demonstration (see [coming soon...](jroi.org)).
+<a href="https://qxrqf.enketo.formhub.org/webform" target="_blank">Patient Reported Functional Status (PRFS)</a>| The Patient Reported Functional Status (PRFS) is a [ECOG status](http://en.wikipedia.org/wiki/ECOG_score) assessment expressed in lay language. It has bee developed and validated by Cancer Care Ontario (for details see [here](https://www.cancercare.on.ca/common/pages/UserFile.aspx?fileId=277285)).
+<a href="https://tdr54.enketo.formhub.org/webform" target="_blank">Symptom Assessment Scale (SAS)</a>| The Symptom Assessment Scale (SAS) describes the patient’s level of distress relating to the seven most common symptoms by palliative patients. The SAS was developed in Australia (for details see [here](http://ahsri.uow.edu.au/content/groups/public/@web/@chsd/@pcoc/documents/doc/uow129189.pdf)).
+<a href="https://a3lfc.enketo.formhub.org/webform" target="_blank">'State your height' Survey</a>|A survey that shows some of OpenRosa's advanced features such as validation or branching. It was used in PROsaiq's initial demonstration (see [coming soon...](jroi.org)).
 
 
-### View the HL7 message<a name="ViewHL7"></a> 
+### II. View the HL7 message<a name="ViewHL7"></a> 
 
-The PROsaiq system generates a customised HL7 message from the ePRO data collected. In a live PROsaiq system this message is automtically imported into MOSAIQ after submission of ePRO instrument (browser or app) without any further user input. Thus providing the clinician a MOSIAQ-integrated longitudinal view of the ePRO data, without introducing time consuming steps such as switching to a different system (see [example screenshot]() of 'State your height' data in MOSIAQ).  
+The PROsaiq system generates a customised HL7 message from the ePRO data collected. In a live PROsaiq system this message is automtically imported into MOSAIQ after submission of ePRO instrument (browser or app) without any further user input. Thus providing the clinician a MOSIAQ-integrated longitudinal view of the ePRO data, without introducing time consuming steps such as switching to a different system (see ![example screenshot](images/screenhots/mosaiq-state_your_height.png) of 'State your height' data in MOSIAQ).  
 
 The follwing steps are exclusive to the demonstrator (as explained in the preceeding paragraph):
 
-* Browse to the HL7 Converter component: [http://prosaiq-demo.herokuapp.com/odkSubmission/list](http://prosaiq-demo.herokuapp.com/odkSubmission/list)
+1. Browse to the HL7 Converter component:  
+[http://prosaiq-demo.herokuapp.com/odkSubmission/list](http://prosaiq-demo.herokuapp.com/odkSubmission/list)
   * please consider the CAVEAT below
-  
-* Find your submission
+2. Find your submission
   * please note there might be multiple pages and the submission time is UTC
   * in most cases your submission is the last one on the last page
-
-* Click 'Generate HL7 message'
+3. Click 'Generate HL7 message'
   * displays the HL7 message generated from the data collected before
 
 > __CAVEAT__  
 > For this demo the HL7 converter has been hosted as a web app on a freely available [Heroku](https://www.heroku.com/) server in the US. As a free-of-charge service the performance is limited. __When the app had been idle for more than 30min, it can take up to 60s until it can be reached (please refresh after about 1min).__ The reason for this delay is that the server is dynamically powered off/on in order to conserve energy and performance. 
 
-
-## Data collection via Android app 
+### III. Data collection via Android app (OPTIONAL)
 
 The app [ODK Collect](http://opendatakit.org/use/collect/) provides PROsaiq with an alterantive data collection method for smart devices running the Android operating system.  
 
 While both methods have their strenghts (see [comparison matrix](https://enketo.org/openrosa)), the ODK Collect data collection variant is __optional__ in this demonstrator as it requires more prepration such as app download and configuration. The following instructions provide step-by-step instructions __(NEEDS UPDATING!)__:
 
-* Install ODK Collect
+1. Install ODK Collect
   * follow the installation instructions at http://opendatakit.org/use/collect/
   * Version 1.4 (1038) was used at the time of writing these notes
-
-* Configure the ODK Collect preferences
+2. Configure the ODK Collect preferences
   * access the preferences by pressing the menu button in the ODK Collect start screen and clicking on 'General  Settings'
   * set Server Platform to 'Other'
   * set URL to 'https://formhub.org/tealow' __(NEEDS UPDATE)__
   * leave all other settings at default (User and Password can be blank)
-
-* Download the the desired form 
+3. Download the the desired form 
   * click on 'Get Blank Form' button in ODK Collect's main menu
   * select and download the desired form (PRFS, SAS or 'State your height')
-
-* Fill out the the desired form
+4. Fill out the the desired form
   * click on 'Fill Blank Form' button in ODK Collect's main menu
   * select one of the forms downloaded in the previous step
   * fill it in by swiping through and following the prompts
   * once at the end of the form leave the 'finalised' checked and click the 'Save Form and Exit' (this step is not necessary if automated via 'General Settings')
-
-* Send the the finalised form to the server (this step is not necessary if automated via 'General Settings')
+5. Send the the finalised form to the server (this step is not necessary if automated via 'General Settings')
   * click on 'Send Finalised Form' button
   * select and upload the filled in form (a success message confirms that the upload worked)
-
-* View the HL7 message as per instructions [above](#ViewHL7)
+6. View the HL7 message as per instructions [above](#ViewHL7)
 
 
