@@ -12,7 +12,7 @@ The following diagram provides an overview of the PROsaiq prototype components:
 ![PROsaiq prototype demonstrator overview](images/prosaiq-demo.png)
 PROsaiq system integrates existing (**blue**) and new (**yellow**) components in order to deliver new functionality efficiently and can be described as an ["enterprise mashup"](http://en.wikipedia.org/wiki/Enterprise_mashups).  
 
-The components marked with the **red star** can be accessed as part of this demonstrator. In a live PROsaiq environment the __HL7 Converter and [Formhub](https://formhub.org/) Webserver run in the background (no direct user interaction)__ providing MOSAIQ with HL7 files for automatic importation. As there is no online MOSAIQ system that could have been used for this demonstrator, a simple web-based user interface was built to display the HL7 message generated from the collected data by the 'HL7 converter' component.
+The components marked with the **red star** can be accessed as part of this demonstrator. In a live PROsaiq environment the __HL7 Converter and [Formhub](https://formhub.org/) Webserver run in the background (i.e. no direct user interaction)__ providing MOSAIQ with HL7 files for automatic importation. As there is no online MOSAIQ system that could have been used for this demonstrator, a simple web-based user interface was built to display the HL7 message generated from the data received by the 'HL7 converter' component.
 
 <!-- ##Contents
 * This will become a table of contents (this text will be scraped).
@@ -26,10 +26,10 @@ PROsaiq uses [Enketo](https://enketo.org/) for browser-based data collection. Th
 
 This demonstrator has three examples:  
 
-1. Follow the links in the first column of the table to open an online form  
-2. Fill in the form and press 'Submit'  
+* Follow the links in the first column of the table to open an online form  
+* Fill in the form and press 'Submit'  
   * a message will be appear to say that the request has been queued and then submitted  
-3. Return to this page and continue with [II.](#ViewHL7)
+* Return to this page and continue with [II.](#ViewHL7)
 
 ePRO Instrument | Comment
 ---|---
