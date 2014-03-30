@@ -27,9 +27,10 @@ PROsaiq uses [Enketo](https://enketo.org/) for browser-based data collection. Th
 This demonstrator has three examples:  
 
 * Follow the links in the first column of the table to open an online form  
-  * repeat the following steps for each form
-* Fill in the form and press 'Submit'
-  * a message will be appear to say that the request has been queued and then submitted  
+  * use at least one form, however  we recommend to open all three forms as each demonstrates different survey features
+* Fill in the forms and press 'Submit'
+  * a message will be appear to say that the request has been queued and eventually submitted 
+  * if it takes too long until automatic submission click the queue indicator and envoke the upload manually
 * Return to this page and continue with [II.](#ii_view_the_hl7_message)
 
 ePRO Instrument | Comment
