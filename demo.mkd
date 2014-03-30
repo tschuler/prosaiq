@@ -24,11 +24,12 @@ The components marked with the **red star** can be accessed as part of this demo
 
 PROsaiq uses [Enketo](https://enketo.org/) for browser-based data collection. This enables PROsaiq to be used on multiple devices such as tablet computer, smart phone, personal computer provided they support a modern browser with adequate HTML5 support. Note that if you are having issues using this demonstrator, please try accessing from a Chrome, Firefox or Safari browser.
 
-This demonstrator has three examples:
-1. Follow the links in the first column of the table to open an online form
-2. Fill in the form and press 'Submit'
-  * a message will be appear to say that the request has been queued and then submitted
-* Return to this page and continue with [II.](#ViewHL7)
+This demonstrator has three examples:  
+
+1. Follow the links in the first column of the table to open an online form  
+2. Fill in the form and press 'Submit'  
+  * a message will be appear to say that the request has been queued and then submitted  
+3. Return to this page and continue with [II.](#ViewHL7)
 
 ePRO Instrument | Comment
 ---|---
@@ -44,7 +45,7 @@ The PROsaiq system generates a customised HL7 message from the ePRO data collect
 The follwing steps are exclusive to the demonstrator (as explained in the preceeding paragraph):
 
 1. Browse to the HL7 Converter component:  
-[http://prosaiq-demo.herokuapp.com/odkSubmission/list](http://prosaiq-demo.herokuapp.com/odkSubmission/list)
+  * [http://prosaiq-demo.herokuapp.com/odkSubmission/list](http://prosaiq-demo.herokuapp.com/odkSubmission/list)
   * please consider the CAVEAT below
 2. Find your submission
   * please note there might be multiple pages and the submission time is UTC
@@ -62,7 +63,7 @@ The app [ODK Collect](http://opendatakit.org/use/collect/) provides PROsaiq with
 While both methods have their strenghts (see [comparison matrix](https://enketo.org/openrosa)), the ODK Collect data collection variant is __optional__ in this demonstrator as it requires more prepration such as app download and configuration. The following instructions provide step-by-step instructions __(NEEDS UPDATING!)__:
 
 1. Install ODK Collect
-  * follow the installation instructions at http://opendatakit.org/use/collect/
+  * follow the installation instructions at [http://opendatakit.org/use/collect/](http://opendatakit.org/use/collect/)
   * Version 1.4 (1038) was used at the time of writing these notes
 2. Configure the ODK Collect preferences
   * access the preferences by pressing the menu button in the ODK Collect start screen and clicking on 'General  Settings'
