@@ -26,7 +26,7 @@ PROsaiq uses [Enketo](https://enketo.org/) for browser-based data collection. Th
 
 This demonstrator has three examples:  
 
-* Follow the links in the first column of the table to open an online form  
+* Follow the links in the first column of the table to open an online form    
 * Fill in the form and press 'Submit'  
   * a message will be appear to say that the request has been queued and then submitted  
 * Return to this page and continue with [II.](#ViewHL7)
@@ -44,13 +44,13 @@ The PROsaiq system generates a customised HL7 message from the ePRO data collect
 
 The follwing steps are exclusive to the demonstrator (as explained in the preceeding paragraph):
 
-1. Browse to the HL7 Converter component:  
+* Browse to the HL7 Converter component  
   * [http://prosaiq-demo.herokuapp.com/odkSubmission/list](http://prosaiq-demo.herokuapp.com/odkSubmission/list)
   * please consider the CAVEAT below
-2. Find your submission
-  * please note there might be multiple pages and the submission time is UTC
+* Find your submission
+  * please note there might be multiple pages and the submission time is in [UTC](http://en.wikipedia.org/wiki/Coordinated_Universal_Time)
   * in most cases your submission is the last one on the last page
-3. Click 'Generate HL7 message'
+* Click 'Generate HL7 message'
   * displays the HL7 message generated from the data collected before
 
 > __CAVEAT__  
@@ -62,25 +62,25 @@ The app [ODK Collect](http://opendatakit.org/use/collect/) provides PROsaiq with
 
 While both methods have their strenghts (see [comparison matrix](https://enketo.org/openrosa)), the ODK Collect data collection variant is __optional__ in this demonstrator as it requires more prepration such as app download and configuration. The following instructions provide step-by-step instructions __(NEEDS UPDATING!)__:
 
-1. Install ODK Collect
+* Install ODK Collect
   * follow the installation instructions at [http://opendatakit.org/use/collect/](http://opendatakit.org/use/collect/)
   * Version 1.4 (1038) was used at the time of writing these notes
-2. Configure the ODK Collect preferences
+* Configure the ODK Collect preferences
   * access the preferences by pressing the menu button in the ODK Collect start screen and clicking on 'General  Settings'
   * set Server Platform to 'Other'
   * set URL to 'https://formhub.org/tealow' __(NEEDS UPDATE)__
   * leave all other settings at default (User and Password can be blank)
-3. Download the the desired form 
+* Download the the desired form 
   * click on 'Get Blank Form' button in ODK Collect's main menu
   * select and download the desired form (PRFS, SAS or 'State your height')
-4. Fill out the the desired form
+* Fill out the the desired form
   * click on 'Fill Blank Form' button in ODK Collect's main menu
   * select one of the forms downloaded in the previous step
   * fill it in by swiping through and following the prompts
   * once at the end of the form leave the 'finalised' checked and click the 'Save Form and Exit' (this step is not necessary if automated via 'General Settings')
-5. Send the the finalised form to the server (this step is not necessary if automated via 'General Settings')
+* Send the the finalised form to the server (this step is not necessary if automated via 'General Settings')
   * click on 'Send Finalised Form' button
   * select and upload the filled in form (a success message confirms that the upload worked)
-6. View the HL7 message as per instructions [above](#ViewHL7)
+* View the HL7 message as per instructions [above](#ViewHL7)
 
 
