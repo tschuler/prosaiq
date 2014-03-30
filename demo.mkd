@@ -41,7 +41,7 @@ ePRO Instrument | Comment
 
 ### II. View the HL7 message
 
-The PROsaiq system generates a customised HL7 message from the ePRO data collected. In a live PROsaiq system this message is automtically imported into MOSAIQ after submission of ePRO instrument (browser or app) without any further user input. Thus providing the clinician a MOSIAQ-integrated longitudinal view of the ePRO data, without introducing time consuming steps such as switching to a different system (see ![example screenshot](images/screenhots/mosaiq-state_your_height.png) of 'State your height' data in MOSIAQ).  
+The PROsaiq system generates a customised HL7 message from the ePRO data collected. In a live PROsaiq system this message is automtically imported into MOSAIQ after submission of ePRO instrument (browser or app) without any further user input. Thus providing the clinician a MOSIAQ-integrated longitudinal view of the ePRO data, without introducing time consuming steps such as switching to a different system (see [screenshot](images/screenhots/mosaiq-state_your_height.png) of 'State your height' data in MOSIAQ).  
 
 The follwing steps are exclusive to the demonstrator (as explained in the preceeding paragraph):
 
