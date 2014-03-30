@@ -30,7 +30,7 @@ This demonstrator has three examples:
   * repeat the following steps for each form
 * Fill in the form and press 'Submit'
   * a message will be appear to say that the request has been queued and then submitted  
-* Return to this page and continue with [II.](#ViewHL7)
+* Return to this page and continue with [II.](#ii_view_the_hl7_message)
 
 ePRO Instrument | Comment
 ---|---
@@ -82,6 +82,6 @@ While both methods have their strenghts (see [comparison matrix](https://enketo.
 * Send the the finalised form to the server (this step is not necessary if automated via 'General Settings')
   * click on 'Send Finalised Form' button
   * select and upload the filled in form (a success message confirms that the upload worked)
-* View the HL7 message as per instructions [above](#ViewHL7)
+* View the HL7 message as per instructions [above](#ii_view_the_hl7_message)
 
 
