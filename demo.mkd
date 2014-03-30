@@ -41,7 +41,7 @@ ePRO Instrument | Comment
 
 ### II. View the HL7 message
 
-The PROsaiq system generates a customised HL7 message from the ePRO data collected. In a live PROsaiq system this message is automtically imported into MOSAIQ after submission of ePRO instrument (browser or app) without any further user input. Thus providing the clinician a MOSIAQ-integrated longitudinal view of the ePRO data, without introducing time consuming steps such as switching to a different system (see [screenshot](images/screenhots/mosaiq-state_your_height.png) of 'State your height' data in MOSIAQ).  
+The PROsaiq system generates a customised HL7 message from the ePRO data collected. In a live PROsaiq system this message is automtically imported into MOSAIQ after submission of ePRO instrument (browser or app) without any further user input. Thus providing the clinician a MOSIAQ-integrated longitudinal view of the ePRO data, without introducing time consuming steps such as switching to a different system (for example see [screenshot](images/screenhots/mosaiq-state_your_height.png) of 'State your height' data in MOSIAQ).  
 
 The follwing steps are exclusive to the demonstrator (as explained in the preceeding paragraph):
 
@@ -61,7 +61,7 @@ The follwing steps are exclusive to the demonstrator (as explained in the precee
 
 The app [ODK Collect](http://opendatakit.org/use/collect/) provides PROsaiq with an alterantive data collection method for smart devices running the Android operating system.  
 
-While both methods have their strenghts (see [comparison matrix](https://enketo.org/openrosa)), the ODK Collect data collection variant is __optional__ in this demonstrator as it requires more prepration such as app download and configuration. The following instructions provide step-by-step instructions __(NEEDS UPDATING!)__:
+While both methods have their strenghts (see [comparison matrix](https://enketo.org/openrosa)), the ODK Collect data collection variant is __optional__ in this demonstrator as it requires more prepration such as app download and configuration. The following instructions provide step-by-step instructions:
 
 * Install ODK Collect
   * follow the installation instructions at [http://opendatakit.org/use/collect/](http://opendatakit.org/use/collect/)
@@ -69,7 +69,7 @@ While both methods have their strenghts (see [comparison matrix](https://enketo.
 * Configure the ODK Collect preferences
   * access the preferences by pressing the menu button in the ODK Collect start screen and clicking on 'General  Settings'
   * set Server Platform to 'Other'
-  * set URL to 'https://formhub.org/tealow' __(NEEDS UPDATE)__
+  * set URL to 'https://formhub.org/prosaiq_demo' 
   * leave all other settings at default (User and Password can be blank)
 * Download the the desired form 
   * click on 'Get Blank Form' button in ODK Collect's main menu
