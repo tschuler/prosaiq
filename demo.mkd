@@ -6,17 +6,17 @@ layout: default
 
 # PROsaiq online demonstrator
 
-This public demonstrator aims at providing an easy introduction into the functionality and opportunities of the PROsaiq system. For details about the PROsaiq project including scientific referencing please refer to the open access JROI article: [coming soon...](http://jroi.org).
+This public demonstrator aims at providing an easy introduction into the functionality and opportunities of the PROsaiq system. For details about the PROsaiq project including scientific background and technical details please refer to the open access JROI article: [coming soon...](http://jroi.org).
 
-The following diagram provides an overview of PROsaiq prototype components:
+The following diagram provides an overview of the PROsaiq prototype components:
 ![PROsaiq prototype demonstrator overview](images/prosaiq-demo.png)
 PROsaiq system integrates existing (*__blue__*) and new (*__yellow__*) components in order to deliver new functionality efficiently and can be described as an ["enterprise mashup"](http://en.wikipedia.org/wiki/Enterprise_mashups).  
 
 The components marked with the *__red star__* can be accessed as part of this demonstrator. In a live PROsaiq environment the __HL7 converter and [Formhub](https://formhub.org/) webserver run in the background (no direct user interaction)__ providing MOSAIQ with HL7 files for automatic importation. As there is no online MOSAIQ system that could have been used for this demonstrator, a simple web-based user interface was built to reveal the HL7 message generated from the collected data by the 'HL7 converter' component.
 
-##Contents
+<!-- ##Contents
 * This will become a table of contents (this text will be scraped).
-{:toc}
+{:toc} -->
 
 ## Try it out
 
@@ -35,7 +35,7 @@ ePRO Instrument | Comment
 ['State your height' Survey](https://a3lfc.enketo.formhub.org/webform)|A survey that shows some of OpenRosa's advanced features such as validation or branching. It was used in PROsaiq's initial demonstration (see [coming soon...](jroi.org)).
 
 
-### <a name="DisplayHL7"></a>View the HL7 message 
+### View the HL7 message<a name="ViewHL7"></a> 
 
 The PROsaiq system generates a customised HL7 message from the ePRO data collected. In a live PROsaiq system this message is automtically imported into MOSAIQ after submission of ePRO instrument (browser or app) without any further user input. Thus providing the clinician a MOSIAQ-integrated longitudinal view of the ePRO data, without introducing time consuming steps such as switching to a different system (see [example screenshot]() of 'State your height' data in MOSIAQ).  
 
@@ -85,6 +85,6 @@ While both methods have their strenghts (see [comparison matrix](https://enketo.
   * click on 'Send Finalised Form' button
   * select and upload the filled in form (a success message confirms that the upload worked)
 
-* View the HL7 message as per instructions [above](#DisplayHL7)
+* View the HL7 message as per instructions [above](#ViewHL7)
 
 
