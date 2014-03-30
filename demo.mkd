@@ -26,8 +26,9 @@ PROsaiq uses [Enketo](https://enketo.org/) for browser-based data collection. Th
 
 This demonstrator has three examples:  
 
-* Follow the links in the first column of the table to open an online form    
-* Fill in the form and press 'Submit'  
+* Follow the links in the first column of the table to open an online form  
+
+* Fill in the form and press 'Submit'
   * a message will be appear to say that the request has been queued and then submitted  
 * Return to this page and continue with [II.](#ViewHL7)
 
@@ -38,7 +39,7 @@ ePRO Instrument | Comment
 <a href="https://a3lfc.enketo.formhub.org/webform" target="_blank">'State your height' Survey</a>|A survey that shows some of OpenRosa's advanced features such as validation or branching. It was used in PROsaiq's initial demonstration (see [coming soon...](jroi.org)).
 
 
-### II. View the HL7 message<a name="ViewHL7"></a> 
+### II. View the HL7 message<a name="ViewHL7"></a>  
 
 The PROsaiq system generates a customised HL7 message from the ePRO data collected. In a live PROsaiq system this message is automtically imported into MOSAIQ after submission of ePRO instrument (browser or app) without any further user input. Thus providing the clinician a MOSIAQ-integrated longitudinal view of the ePRO data, without introducing time consuming steps such as switching to a different system (see ![example screenshot](images/screenhots/mosaiq-state_your_height.png) of 'State your height' data in MOSIAQ).  
 
