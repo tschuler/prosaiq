@@ -75,7 +75,7 @@ While both methods have their strenghts (see [comparison matrix](https://enketo.
 * Download the the desired form 
   * click on 'Get Blank Form' button in ODK Collect's main menu
   * select and download the desired form (PRFS, SAS or 'State your height')
-* Fill out the the desired form
+* Fill out the desired form
   * click on 'Fill Blank Form' button in ODK Collect's main menu
   * select one of the forms downloaded in the previous step
   * fill it in by swiping through and following the prompts
