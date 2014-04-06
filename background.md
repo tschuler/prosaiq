@@ -3,8 +3,10 @@ title: PROsaiq background
 layout: default
 ---
 
-# Background
+# [PROsaiq](http://tschuler.github.io/prosaiq) > Background
+
 ## From PRO to ePRO
+
 Patient-reported outcome (PRO) questionnaires measure a patient's perception of the impact of a disease and its treatment[^khadka_importance_2012]. PRO information enhances patient-centred care generally, but is particularly useful in oncology where side-effects from treatment are common[^lipscomb_patient-reported_2007].
 
 Initially PROs were almost exclusively collected in research[^brundage_patterns_2011] using a classic pen and paper approach, however the advent of electronic PRO (ePRO) systems based on tablet or web technologies has allowed their use in routine oncological practice[^basch_supporting_2011], in palliative care[^antunes_implementing_2013] and during cancer survivorship[^ashley_feasibility_2011].
