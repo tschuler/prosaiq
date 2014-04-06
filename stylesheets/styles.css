@@ -412,6 +412,10 @@ footer {
 
 }
 
+/* Additions based on Stackedit's base.css */
+
+.footnote{vertical-align:top;position:relative;top:-0.5em;font-size:0.8em}
+
 @media print {
   body {
     padding:0.4in;
