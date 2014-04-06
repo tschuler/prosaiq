@@ -1,5 +1,9 @@
 @import url(https://fonts.googleapis.com/css?family=Arvo:400,700,400italic);
 
+/* Additions based on Stackedit's base.css */
+
+.footnote{vertical-align:top;position:relative;top:-0.5em;font-size:0.8em}
+
 /* MeyerWeb Reset */
 
 html, body, div, span, applet, object, iframe,
@@ -411,10 +415,6 @@ footer {
 	}
 
 }
-
-/* Additions based on Stackedit's base.css */
-
-.footnote{vertical-align:top;position:relative;top:-0.5em;font-size:0.8em}
 
 @media print {
   body {
