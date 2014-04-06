@@ -4,15 +4,18 @@ layout: default
 ---
 
 
-# PROsaiq online demonstrator
+# [PROsaiq](http://tschuler.github.io/prosaiq) Online Demonstrator
 
-This public demonstrator aims at providing an easy introduction into the functionality and opportunities of the PROsaiq system. For details about the PROsaiq project including scientific background and technical details please refer to the open access JROI article: [coming soon...](http://jroi.org).
+This public demonstrator aims at providing an easy introduction into the functionality and opportunities of the PROsaiq system. 
 
-The following diagram provides an overview of the PROsaiq prototype components:
+The following diagram provides an overview of the PROsaiq components used in this demo:
 ![PROsaiq prototype demonstrator overview](images/prosaiq-demo.png)
-PROsaiq system integrates existing (**blue**) and new (**yellow**) components in order to deliver new functionality efficiently and can be described as an ["enterprise mashup"](http://en.wikipedia.org/wiki/Enterprise_mashups).  
 
-The components marked with the **red star** can be accessed as part of this demonstrator. In a live PROsaiq environment the __HL7 Converter and [Formhub](https://formhub.org/) Webserver run in the background (i.e. no direct user interaction)__ providing MOSAIQ with HL7 files for automatic importation. As there is no online MOSAIQ system that could have been used for this demonstrator, a simple web-based user interface was built to display the HL7 message generated from the data received by the 'HL7 converter' component.
+The components marked with the **red star** can be accessed directly as part of this demonstrator. As there is no online MOSAIQ system that could have been used for this demonstrator (grey), a simple web-based user interface was built to display the HL7 message generated from the data received by the 'HL7 Converter' component (yellow).
+
+> NOTE
+>
+> In a live PROsaiq environment the __HL7 Converter and Web Server run in the background (i.e. no direct user interaction)__ providing MOSAIQ with HL7 files for automatic importation.
 
 <!-- ##Contents
 * This will become a table of contents (this text will be scraped).
@@ -22,7 +25,7 @@ The components marked with the **red star** can be accessed as part of this demo
 
 ### I. Data collection via a web browser
 
-PROsaiq uses [Enketo](https://enketo.org/) for browser-based data collection. This enables PROsaiq to be used on multiple devices such as tablet computers, smart phones, or personal computers provided they support a modern browser with adequate HTML5 support. Note that if you are having issues using this demonstrator, please try accessing from a recent Chrome, Firefox or Safari browser.
+PROsaiq can be used on multiple devices such as tablet computers, smart phones, or personal computers provided they support a modern browser with adequate HTML5 support. Note that if you are having issues using this demonstrator, please try accessing from a recent Chrome, Firefox or Safari browser.
 
 This demonstrator has three examples:  
 
@@ -56,15 +59,16 @@ The follwing steps are exclusive to the demonstrator (as explained in the precee
   * displays the HL7 message generated from the data collected before
 
 > __CAVEAT__  
-> For this demo the HL7 converter has been hosted as a web app on a freely available [Heroku](https://www.heroku.com/) server in the US. As a free-of-charge service the performance is limited. __When the app had been idle for more than 30min, it can take up to 60s until it can be reached (please refresh after about 1min).__ The reason for this delay is that the server is dynamically powered off/on in order to conserve energy and performance. 
+>
+> For this demo the HL7 converter has been hosted as a web app on a freely available [Heroku](https://www.heroku.com/) server in the US. As a free-of-charge service the performance is limited. __When the app had been idle for more than 30 minutes, it can take up to 60 seconds until it can be reached (please refresh after about 1 minute).__ The reason for this delay is that the server is dynamically powered off/on in order to conserve energy and performance. 
 
 ### III. Data collection via Android app
 
 > NOTE: This part of the demonstrator can be skipped to save time.
 
-The app [ODK Collect](http://opendatakit.org/use/collect/) provides PROsaiq with an alternative data collection method for smart devices running the Android operating system.  Both methods have their strengths (see [comparison matrix](https://enketo.org/openrosa)).  
+PROsaiq provides an alternative data collection method for smart devices running the Android operating system.  Browser and app-based data collection each have their strengths (see [comparison matrix](https://enketo.org/openrosa)).  
 
-This part contains the same forms as [part I](#i_data_collection_via_a_web_browser). However, it requires more preparation such as app download and configuration steps.  We have deliberately put this alternative data collection method last in this demonstratior to provide the option of skipping during the initial use. The following instructions provide step-by-step guidance for the interested user:
+This part contains the same forms as [part I](#i_data_collection_via_a_web_browser). However, it requires more preparation such as app download and configuration steps.  We have deliberately put this alternative data collection method last in this demonstrator to give the option of skipping during the initial use. The following instructions provide step-by-step guidance for the interested user:
 
 * Install ODK Collect
   * follow the installation instructions at [http://opendatakit.org/use/collect/](http://opendatakit.org/use/collect/)
