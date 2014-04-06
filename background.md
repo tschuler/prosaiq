@@ -13,7 +13,9 @@ Initially PROs were almost exclusively collected in research[^brundage_patterns_
 
 ## Motivation
 
-There is good evidence that ePRO collection mproves care of the individual patient[^bennett_electronic_2012]<sup>,</sup>[^chen_systematic_2013] and provides new opportunities for clinical research and population surveillance [^snyder_patient-reported_2013]<sup>,</sup>[^wu_measure_2013]. The following table  summarises these benefits:
+There is good evidence that ePRO collection improves the care of the individual patient[^bennett_electronic_2012]<sup>,</sup>[^chen_systematic_2013] and provides new opportunities for clinical research and population surveillance [^snyder_patient-reported_2013]<sup>,</sup>[^wu_measure_2013]. The table below summarises these benefits. 
+
+The PROsaiq project aims to enable the benefits of ePRO in day-to-day clincal practice using the MOSAIQ® oncology information system. Previously mentioned concerns[^jagsi_qualitative_2013] have been addressed in the PROsaiq design, which is described an open access JROI article: [coming soon...](http://jroi.org).
 
 ![ePRO Benefits](images/ePRO_benefits.png)
 
@@ -32,6 +34,8 @@ There is good evidence that ePRO collection mproves care of the individual patie
 [^bennett_electronic_2012]: Bennett, A.V., Jensen, R.E., Basch, E., 2012. Electronic patient-reported outcome systems in oncology clinical practice. CA Cancer J Clin 62, 337–347. doi:10.3322/caac.21150 [\[Full text\]](http://onlinelibrary.wiley.com/doi/10.3322/caac.21150/full)
 
 [^chen_systematic_2013]: Chen, J., Ou, L., Hollis, S.J., 2013. A systematic review of the impact of routine collection of patient reported outcome measures on patients, providers and health organisations in an oncologic setting. BMC Health Serv Res 13, 211. doi:10.1186/1472-6963-13-211 [\[Full text\]](http://www.biomedcentral.com/1472-6963/13/211)
+
+[^jagsi_qualitative_2013]: Jagsi, R., Chiang, A., Polite, B.N., Medeiros, B.C., McNiff, K., Abernethy, A.P., Zon, R., Loehrer, P.J., 2013. Qualitative Analysis of Practicing Oncologists’ Attitudes and Experiences Regarding Collection of Patient-Reported Outcomes. JOP 9, e290–e297. doi:10.1200/JOP.2012.000823 [\[Full text\]](http://jop.ascopubs.org/content/9/6/e290.long)
 
 [^snyder_patient-reported_2013]: Snyder, C.F., Aaronson, N.K., Choucair, A.K., Elliott, T.E., Greenhalgh, J., Halyard, M.Y., Hess, R., Miller, D.M., Reeve, B.B., Santana, M., 2012. Implementing patient-reported outcomes assessment in clinical practice: a review of the options and considerations. Qual Life Res 21, 1305–1314. doi:10.1007/s11136-011-0054-x [\[PubMed abstract\]](http://www.ncbi.nlm.nih.gov/pubmed/22048932)
 
