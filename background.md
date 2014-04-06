@@ -15,7 +15,7 @@ Initially PROs were almost exclusively collected in research[^brundage_patterns_
 
 There is good evidence that ePRO collection mproves care of the individual patient[^bennett_electronic_2012]<sup>,</sup>[^chen_systematic_2013] and provides new opportunities for clinical research and population surveillance [^snyder_patient-reported_2013]<sup>,</sup>[^wu_measure_2013]. The following table  summarises these benefits:
 
-![ePRO Benefits](https://raw.githubusercontent.com/tschuler/prosaiq/gh-pages/images/benefits.png)
+![ePRO Benefits](images/ePRO_benefits.png)
 
 [^khadka_importance_2012]: Khadka, J., Gothwal, V.K., McAlinden, C., Lamoureux, E.L., Pesudovs, K., 2012. The importance of rating scales in measuring patient-reported outcomes. Health Qual Life Outcomes 10, 80. doi:10.1186/1477-7525-10-80 [\[Full text\]](http://www.hqlo.com/content/10/1/80)
 
