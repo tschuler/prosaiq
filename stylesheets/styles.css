@@ -1,12 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Arvo:400,700,400italic);
 
-/* Additions based on Stackedit's base.css */
-
-sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}
-sup{top:-0.5em}
-sub{bottom:-0.25em}
-.footnote{vertical-align:top;position:relative;top:-0.5em;font-size:0.8em}
-
 /* MeyerWeb Reset */
 
 html, body, div, span, applet, object, iframe,
@@ -426,3 +419,11 @@ footer {
     color:#444;
   }
 }
+
+
+/* Additions based on Stackedit's base.css */
+
+sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}
+sup{top:-0.5em}
+sub{bottom:-0.25em}
+.footnote{vertical-align:top;position:relative;top:-0.5em;font-size:0.8em}
