@@ -1,3 +1,8 @@
+---
+title: PROsaiq background
+layout: default
+---
+
 # Background
 ## From PRO to ePRO
 Patient-reported outcome (PRO) questionnaires measure a patient's perception of the impact of a disease and its treatment[^khadka_importance_2012]. PRO information enhances patient-centred care generally, but is particularly useful in oncology where side-effects from treatment are common[^lipscomb_patient-reported_2007].
