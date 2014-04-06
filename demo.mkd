@@ -15,7 +15,7 @@ The following diagram provides an overview of the PROsaiq components used in thi
 The components marked with the **red star** can be accessed directly as part of this demonstrator. As there is no online MOSAIQ system that could have been used for this demonstrator (grey), a simple web-based user interface was built to display the HL7 message generated from the data received by the 'HL7 Converter' component (yellow).
 
 > __NOTE__  
-> In a live PROsaiq environment the __HL7 Converter and Web Server run in the background (i.e. no direct user interaction)__ providing MOSAIQ with HL7 files for automatic importation.
+> In the full PROsaiq prototype the __HL7 Converter and Web Server run in the background (i.e. no direct user interaction)__ providing MOSAIQ with HL7 files for automatic importation.
 
 <!-- ##Contents
 * This will become a table of contents (this text will be scraped).
