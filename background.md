@@ -19,6 +19,8 @@ The PROsaiq project aims to enable the benefits of ePRO in day-to-day clincal pr
 
 ![ePRO Benefits](images/ePRO_benefits.png)
 
+## References
+
 [^khadka_importance_2012]: Khadka, J., Gothwal, V.K., McAlinden, C., Lamoureux, E.L., Pesudovs, K., 2012. The importance of rating scales in measuring patient-reported outcomes. Health Qual Life Outcomes 10, 80. doi:10.1186/1477-7525-10-80 [\[Full text\]](http://www.hqlo.com/content/10/1/80)
 
 [^lipscomb_patient-reported_2007]: Lipscomb, J., Gotay, C.C., Snyder, C.F., 2007. Patient-reported outcomes in cancer: a review of recent research and policy initiatives. CA Cancer J Clin 57, 278–300. doi:10.3322/CA.57.5.278 [\[Full text\]](http://onlinelibrary.wiley.com/enhanced/doi/10.3322/CA.57.5.278)
