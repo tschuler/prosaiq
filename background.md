@@ -17,7 +17,7 @@ There is good evidence that ePRO collection improves the care of the individual 
 
 The PROsaiq project aims to enable the benefits of ePRO in day-to-day clincal practice using the MOSAIQ® oncology information system. Concerns with ePRO systems identified by reseaerch[^jagsi_qualitative_2013] have been addressed in the PROsaiq design, which is described in an open access JROI article (see [coming soon...](http://jroi.org)).
 
-<center>![ePRO Benefits](images/ePRO_benefits.png)</center>
+![ePRO Benefits](images/ePRO_benefits.png)
 
 [^khadka_importance_2012]: Khadka, J., Gothwal, V.K., McAlinden, C., Lamoureux, E.L., Pesudovs, K., 2012. The importance of rating scales in measuring patient-reported outcomes. Health Qual Life Outcomes 10, 80. doi:10.1186/1477-7525-10-80 [\[Full text\]](http://www.hqlo.com/content/10/1/80)
 
