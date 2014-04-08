@@ -38,9 +38,9 @@ This demonstrator has three examples:
 
 ePRO Instrument | Comment
 ---|---
-<a href="https://qxrqf.enketo.formhub.org/webform" target="_blank">Patient Reported Functional Status (PRFS)</a>| The Patient Reported Functional Status (PRFS) is a [ECOG status](http://en.wikipedia.org/wiki/ECOG_score) assessment expressed in lay language. It has bee developed and validated by Cancer Care Ontario (for details see [here](https://www.cancercare.on.ca/common/pages/UserFile.aspx?fileId=277285)).
+<a href="https://t3dvx.enketo.formhub.org/webform" target="_blank">Patient Reported Functional Status (PRFS)</a>| The Patient Reported Functional Status (PRFS) is a [ECOG status](http://en.wikipedia.org/wiki/ECOG_score) assessment expressed in lay language. It has bee developed and validated by Cancer Care Ontario (for details see [here](https://www.cancercare.on.ca/common/pages/UserFile.aspx?fileId=277285)).
 <a href="https://tdr54.enketo.formhub.org/webform" target="_blank">Symptom Assessment Scale (SAS)</a>| The Symptom Assessment Scale (SAS) describes the patient’s level of distress relating to the seven most common symptoms by palliative patients. The SAS was developed in Australia (for details see [here](http://ahsri.uow.edu.au/content/groups/public/@web/@chsd/@pcoc/documents/doc/uow129189.pdf)).
-<a href="https://a3lfc.enketo.formhub.org/webform" target="_blank">'State your height' Survey</a>|A survey that shows some of PROsaiq's advanced features such as validation or branching. It was used in PROsaiq's initial demonstration (see [coming soon...](jroi.org)).
+<a href="https://jknxn.enketo.formhub.org/webform" target="_blank">'State your height' Survey</a>|A survey that shows some of PROsaiq's advanced features such as validation or branching. It was used in PROsaiq's initial demonstration (see [coming soon...](jroi.org)).
 
 
 ### II. View the HL7 message
