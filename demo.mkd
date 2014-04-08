@@ -75,7 +75,8 @@ This part contains the same forms as [part I](#i_data_collection_via_a_web_brows
 * Configure the ODK Collect preferences
   * access the preferences by pressing the menu button in the ODK Collect start screen and clicking on 'General  Settings'
   * set Server Platform to 'Other'
-  * set URL to 'https://formhub.org/prosaiq_demo' 
+  * set URL to 'https://formhub.org/prosaiq_demo'
+  * set Navigation to 'Use swipes and buttons'
   * leave all other settings at default (User and Password can be blank)
 * Download the the desired form 
   * click on 'Get Blank Form' button in ODK Collect's main menu
@@ -84,7 +85,7 @@ This part contains the same forms as [part I](#i_data_collection_via_a_web_brows
   * click on 'Fill Blank Form' button in ODK Collect's main menu
   * select one of the forms downloaded in the previous step
   * fill it in by swiping through and following the prompts
-  * once at the end of the form leave the 'finalised' checked and click the 'Save Form and Exit' (this step is not necessary if automated via 'General Settings')
+  * once at the end of the form tick 'finalised' (this step is not necessary if automated via 'General Settings') and click the 'Save Form and Exit' button
 * Send the the finalised form to the server (this step is not necessary if automated via 'General Settings')
   * click on 'Send Finalised Form' button
   * select and upload the filled in form (a success message confirms that the upload worked)
