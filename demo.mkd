@@ -59,7 +59,7 @@ The following steps are exclusive to the demonstrator (as explained in the prece
   * displays the HL7 message generated from the data collected before
 
 > __CAVEAT__  
-> For this demo the HL7 converter has been hosted as a web app on a freely available [Heroku](https://www.heroku.com/) server in the US. As a free-of-charge service the performance is limited. __When the app had been idle for more than 30 minutes, it can take up to 60 seconds until it can be reached (please refresh after about 1 minute).__ The reason for this delay is that the server is dynamically powered off/on in order to conserve energy and performance. 
+> For this demo the HL7 converter has been hosted as a web app on a freely available [Heroku](https://www.heroku.com/) server in the US. As a free-of-charge service the performance is limited. __When the app had been idle for more than 30 minutes, it can take up to 60 seconds until it can be reached (please refresh after 1-2 minutes).__ The reason for this delay is that the server is dynamically powered off/on in order to conserve energy and performance. 
 
 ### III. Data collection via Android app
 
