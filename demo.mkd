@@ -51,7 +51,7 @@ The following steps are exclusive to the demonstrator (as explained in the prece
 
 * Access the HL7 Converter demo interface 
   * considering the CAVEAT below...
-  * ...browse to <a href="http://prosaiq-demo.herokuapp.com/odkSubmission/list" target="_blank">http://prosaiq-demo.herokuapp.com/odkSubmission/list</a>
+  * browse to <a href="http://prosaiq-demo.herokuapp.com/odkSubmission/list" target="_blank">http://prosaiq-demo.herokuapp.com/odkSubmission/list</a>
 * Find your submission
   * please note there might be multiple pages and the submission time is in [UTC](http://en.wikipedia.org/wiki/Coordinated_Universal_Time)
   * in most cases your submission is the last one on the last page
