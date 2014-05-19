@@ -45,13 +45,13 @@ ePRO Instrument | Comment
 
 ### II. View the HL7 message
 
-The PROsaiq system generates a customised HL7 message from the ePRO data collected. In a live PROsaiq system this message is automatically imported into MOSAIQ after submission of ePRO data (via browser or app) without any further user input. This therefore provides the clinicians a MOSIAQ-integrated longitudinal view of the ePRO data, without introducing time consuming steps such as switching to a different system (for an example see [screenshot](https://raw.githubusercontent.com/tschuler/prosaiq/gh-pages/images/screenshots/mosaiq-state_your_height.png) of 'State your height' data in MOSIAQ).  
+The PROsaiq system generates a customised HL7 message from the ePRO data collected. In routine use of the PROsaiq system this message is automatically imported into MOSAIQ after submission of ePRO data (via browser or app) without any further user input (i.e. the HL7 Converter web interface is only used for demonstration). This therefore provides the clinicians a MOSIAQ-integrated longitudinal view of the ePRO data, without introducing time consuming steps such as switching to a different system (for an example see [screenshot](https://raw.githubusercontent.com/tschuler/prosaiq/gh-pages/images/screenshots/mosaiq-state_your_height.png) of 'State your height' data in MOSIAQ).  
 
 The following steps are exclusive to the demonstrator (as explained in the preceding paragraph):
 
-* Browse to the HL7 Converter component  
-  * [http://prosaiq-demo.herokuapp.com/odkSubmission/list](http://prosaiq-demo.herokuapp.com/odkSubmission/list)
-  * please consider the CAVEAT below
+* Access the HL7 Converter demo interface 
+  * considering the CAVEAT below...
+  * ...browse to <a href="http://prosaiq-demo.herokuapp.com/odkSubmission/list" target="_blank">http://prosaiq-demo.herokuapp.com/odkSubmission/list</a>
 * Find your submission
   * please note there might be multiple pages and the submission time is in [UTC](http://en.wikipedia.org/wiki/Coordinated_Universal_Time)
   * in most cases your submission is the last one on the last page
